@@ -40,7 +40,7 @@ train_epl02 = pd.read_csv('./data/EPL02_03.csv', encoding="ISO-8859-1")
 test_epl03 = pd.read_csv('./data/EPL03_04.csv', encoding="ISO-8859-1")
 test_epl04 = pd.read_csv('./data/EPL04_05.csv', encoding="ISO-8859-1")
 
-# Concat all training files into one structure
+# Concat all training and test files into one structure
 df_train = pd.concat((train_epl00, train_epl01, train_epl02), axis=0, ignore_index=True)
 df_test  = pd.concat((test_epl03, test_epl04), axis=0, ignore_index=True)
 
